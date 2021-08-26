@@ -1,0 +1,287 @@
+/*-------基础样式--------*/
+body,h1,h2,h3,h4,h5,h6,p,dl,dd{
+  margin:0
+}
+body{
+  font-size: 14px;
+  color:#333;
+  font-family: "微软雅黑";
+}
+ul,ol{
+  margin:0;
+  padding: 0;
+  list-style: none;
+}
+img{
+  border:none;
+  vertical-align: middle;
+}
+a{
+  text-decoration: none;
+  color:#333;
+}
+a:hover{
+  color:#b4a078;
+}
+input{
+  margin:0;
+  padding:0;
+  vertical-align: middle;
+  border:1px solid #ccc;
+}
+label{
+  vertical-align: middle;
+}
+table{
+  border-collapse: collapse;
+}
+th,td{
+  padding:0;
+}
+.center{
+  width:1226px;
+  margin:0 auto;
+}
+
+
+/*-------头部样式--------*/
+#head{
+  width:1440px;
+}
+#head .top{
+  background: #333;
+  width:100%;
+  height:40px;
+}
+#head .center{
+  width:1226px;
+  margin:0 auto;
+}
+#head .center .left{
+  float: left;
+  line-height: 40px;
+  position: relative;
+}
+#head .center .left a{
+  font-size: 12px;
+  color:#b0b0b0;
+  margin:14px 1px;
+}
+#head .center a:hover{
+  color:#fff;
+}
+#head .center .left span{
+  color:#424242;
+}
+#head .center .left .appcode{
+  position: absolute;
+  width: 124px;
+  height: 148px;
+  top:40px;
+  left:518px;
+  text-align: center;
+  box-shadow: 0 0 3px gray;
+  display: none;
+}
+#head .center .left .appcode::before{
+  width:10px;
+  height:6px;
+  content:'';
+  display: block;
+  background: url(../img/ico_02.png);
+  position: absolute;
+  margin:auto;
+  left:0;
+  top:-6px;
+  right:0px;
+}
+#head .center .left .topbar-download:hover .appcode{
+  display: block;
+}
+#head .center .left .appcode img{
+  width:90px;
+  height:90px;
+  margin-top: 17px;
+}
+#head .center .left .appcode p{
+  font-size: 13px;
+  font-weight: bold;
+}
+#head .center .right .cart{
+  float: right;
+  background: #424242;
+  width:120px;
+  height:40px;
+  line-height: 40px;
+  padding-left: 20px;
+  font-size: 14px;
+  color: #b0b0b0;
+  cursor: pointer;
+  position: relative;
+}
+#head .center .right .cart .list{
+  width:316px;
+  height:100px;
+  background:#fff;
+  position: absolute;
+  right: 0;
+  top:40px;
+  z-index: 2;
+  display: none;
+  box-shadow: 0 0 3px gray;
+}
+#head .center .right .cart:hover{
+  color:orange;
+  background: #fff;
+}
+#head .center .right .cart:hover .list{
+  display: block;
+}
+#head .center .right .btns{
+  float: right;
+  width:138px;
+  background:transparent;
+  height:40px;
+  margin-right: 18px;
+}
+#head .center .right .btns a{
+  width:34px;
+  height:40px;
+  padding: 0 5px;
+  line-height: 40px;
+  color:#b0b0b0;
+  font-size: 12px;
+  box-sizing: border-box;
+}
+#head .center .right .btns a:hover{
+  color:#fff;
+}
+#head .center .right .btns a:nth-child(2),
+#head .center .right .btns a:nth-child(3){
+  border-left:0.5px solid rgb(78, 75, 75)
+}
+#head .center .right .btns a.message{
+  width:68px
+}
+#head .mid .center{
+  height:100px;
+  border:1px solid #fff;
+}
+
+#head .mid a{
+  color:#333;
+  font-size: 16px;
+}
+#head .mid .logo{
+  float: left;
+}
+#head .mid .logo img{
+  width:56px;
+  height:56px;
+  margin-top:22px;
+}
+#head .mid ul{
+  float: left;
+  display: flex;
+  margin-top:12px;
+  margin-left:176px;
+  position: relative;
+}
+#head .mid ul li{
+  padding: 26px 10px 65px;
+  position: relative;
+}
+#head .mid ul .cart{
+  width: 1440px;
+  height:0;
+  position: absolute;
+  top:100px;
+  z-index: 3;
+  left:-339px;
+  border-top: 1px solid rgb(182, 174, 174);
+  border-bottom: 1px solid rgb(179, 174, 174);
+  box-shadow: 0 1px 3px gray;
+  display: none;
+  transition:height .5s
+}
+#head .mid .outer>li:hover~.cart{
+  display: block;
+  height: 218px;
+}
+#head .mid .outer .cart:hover{
+  display: block;
+  height: 218px;
+}
+#head .mid .outer .center{
+  width:1226px;
+  height:216px;
+}
+#head .mid .outer .cart ul{
+  display: flex;
+  list-style-type: none;
+  width:1226px;
+  margin:0;
+  height:218px;
+  justify-content: space-evenly;
+}
+#head .mid .outer .cart ul li{
+  text-align: center;
+  border-left: 1px solid gray;
+}
+#head .mid .outer .cart ul li:nth-child(1){
+  border-left:none;
+}
+#head .mid .outer .cart ul li p{
+  font-size: 14px;
+  font-weight: bold;
+  margin-top:10px;
+  color:#000;
+}
+#head .mid .outer .cart ul li p.price{
+  font-size: 12px;
+  color:rgb(235, 64, 12);
+}
+#head .mid ul .cart img{
+  width:160px;
+  height:110px;
+}
+#head .mid ul li>a:hover{
+  color:rgb(238, 100, 8)
+}
+#head .mid .search{
+  float: left;
+  border:1px solid rgb(212, 202, 202);
+  margin-left:35px;
+  width:294px;
+  display: flex;
+  height:50px;
+  margin-top:25px;
+}
+#head .mid .search .text{
+  width:245px;
+  height:50px;
+  padding: 0 10px;
+  box-sizing: border-box;
+}
+#head .mid .search .text input{
+  width:243px;
+  height:48px;
+  border:none;
+}
+#head .mid .search .text input:focus{
+  border:none;
+  outline: none;
+}
+#head .mid .search .search-btn{
+  width:55px;
+  height:43px;
+  border-left:1px solid rgb(219, 202, 202);
+  text-align: center;
+  font-size: 26px;
+  padding-top:6px;
+  cursor: pointer;
+}
+#head .mid .search .search-btn:hover{
+  color:#fff;
+  background: orange;
+}
