@@ -1,0 +1,205 @@
+#main{
+  width:1440px;
+  height:5013px;
+  background: #f5f5f5;
+  padding:4px 0 12px;
+}
+
+#main>.center{
+  width:1226px;
+  height:4997px;
+  margin:0 107px;
+  overflow: hidden;
+}
+#main>.center>.home-banner{
+  width:1226px;
+  height:120px;
+  margin:22px 0;
+}
+#main>.center>.home-banner img{
+  width:1226px;
+  height:120px;
+}
+
+/*-------手机------*/
+#phone{
+  width:1226px;
+  height:686px;
+}
+#phone>header,#video>header{
+  width:1226px;
+  height:58px;
+}
+#phone>header>h3,#video>header>h3{
+  float: left;
+  line-height: 58px;
+  font-size: 22px;
+  color:#333;
+}
+#phone>header>.more,#video>header>.more{
+  float: right;
+  width:92px;
+  height:58px;
+  line-height: 58px;
+  font-size: 16px;
+  color:#424242;
+}
+#phone>header>.more>p,#video>header>.more>p{
+  height:22px;
+}
+#phone>header>.more>p:hover,#video>header>.more>p:hover{
+  cursor: pointer;
+  color:orange;
+}
+#phone>header>.more img,#video>header>.more img{
+  width:20px;
+  height:20px;
+  border-radius: 50%;
+  margin-top:-3px
+}
+#phone>.content{
+  width:1226px;
+  height:628px;
+  background: #f5f5f5;
+}
+#phone>.content>.left{
+  float: left;
+}
+#phone>.content>.left:hover{
+  transform: translateY(-1px) scale(1.01);
+  box-shadow: 0 0 5px gray;
+}
+#phone>.content>.left>img{
+  width:234px;
+  height:628px;
+}
+#phone>.content>.right{
+  float: left;
+  width:992px;
+  height:628px;
+}
+#phone>.content>.right>ul{
+  display: flex;
+  height:306px;
+}
+#phone>.content>.right>ul.bottom{
+  margin-top:16px;
+}
+
+/*-------家电/智能/搭配/配件/周边------*/
+#appliance{
+  width:1226px;
+  height:686px;
+  margin-top:16px;
+  box-sizing: border-box;
+}
+#appliance>header{
+  width:1226px;
+  height:58px;
+}
+#appliance>header>h3{
+  float: left;
+  line-height: 58px;
+  font-size: 22px;
+  color:#333;
+}
+#appliance>header>.more{
+  float: right;
+  height:42px;
+}
+#appliance>header>.more>ul{
+  height:42px;
+  padding: 16px 0 0;
+  font-size: 16px;
+  list-style-type: none;
+  display: flex;
+}
+#appliance>header>.more>ul>li{
+  margin-left:30px;
+  color:#424242;
+  cursor: pointer;
+}
+#appliance>header>.more>ul>li.active{
+  color:#ff6700;
+}
+#appliance>header>.more>ul>li.active>span{
+  border-bottom: 2px solid #ff6700;
+  padding-bottom: 2px;
+}
+
+#appliance>.content>.top>li:first-child{
+  width:234px;
+  height:306px;
+  cursor: pointer;
+}
+#appliance>.content>.top{
+  display: flex;
+}
+#appliance>.content>.top>li:first-child>img{
+  width:234px;
+  height:306px
+}
+#appliance>.content>.bottom>li:first-child{
+  width:234px;
+  height:306px;
+  cursor: pointer;
+}
+#appliance>.content>.bottom{
+  display: flex;
+  margin-top:14px;
+}
+#appliance>.content>.bottom>li:first-child>img{
+  width:234px;
+  height:306px
+}
+
+
+/*-------视频------*/
+#video{
+  width:1226px;
+  height:325px;
+}
+#video>.content{
+  width:1226px;
+  height:285px;
+  display: flex;
+  justify-content: space-between;
+}
+#video>.content>li{
+  width:296px;
+  height:285px;
+  background: #fff;
+  text-align: center;
+  cursor: pointer;
+}
+#video>.content>li>.pic{
+  position: relative;
+}
+#video>.content>li>.pic>span{
+  width:34px;
+  height:20px;
+  border-radius: 10px;
+  background: rgba(0,0,0,.6);
+  position: absolute;
+  left:20px;
+  bottom: 8px;
+  border:2px solid #fff;
+  line-height: 20px;
+}
+#video>.content>li>.pic>span:hover{
+  background: #ff6700;
+}
+#video>.content>li img{
+  width:296px;
+  height:180px;
+}
+#video>.content>li>.video_desc>h3{
+  font-size: 14px;
+  color:#333;
+  margin:10px 14px 6px;
+}
+#video>.content>li>.video_desc>p{
+  color:#b0b0b0;
+  font-size: 12px;
+  margin:0 14px;
+}

@@ -1,4 +1,133 @@
+#top{
+  margin-top:24px;
+}
 #top>.center{
   height:670px;
-  background: #faa;
+}
+#top .top{
+  width:1226px;
+  height:460px;
+  position: relative;
+}
+#top .top .left{
+  position: absolute;
+}
+#top .top ul.nav{
+  height:420px;
+  width:234px;
+  position: absolute;
+  z-index: 2;
+  background: rgba(105,101,101,.6);
+  padding: 20px 0;
+}
+#top .top ul.nav li{
+  width:234px;
+  height:42px;
+}
+#top .top ul.nav li:hover{
+  background: orange;
+}
+#top .top ul.nav li a{
+  padding-left: 30px;
+  color:#fff;
+  width:204px;
+  display: block;
+  height:42px;
+  line-height: 42px;
+  position: relative;
+}
+#top .top ul.nav li a span{
+  position: absolute;
+  right:20px;
+  font-size: 20px;
+}
+#top .top .mid{
+  width:600px;
+  height:458px;
+  border:1px solid #000;
+  position: absolute;
+  left:234px;
+  display: none;
+}
+
+#top .top .bg{
+  width:1226px;
+  height:460px;
+  overflow: hidden;
+  position: relative;
+}
+#top .top .bg .pic{
+  width:1226px;
+  height:460px;
+  display: flex;
+  position: absolute;
+}
+#top .top .bg .pic img{
+  width:1226px;
+  height:460px;
+}
+#top .top .bg .indicators{
+  width:100px;
+  height:18px;
+  position: absolute;
+  display: flex;
+  right:20px;
+  bottom: 10px;
+  justify-content: space-evenly;
+}
+#top .top .bg .indicators li{
+  width:16px;
+  height:16px;
+  border-radius: 50%;
+  background: #fff;
+}
+#top .top .bg .indicators li:hover{
+  cursor: pointer;
+}
+#top .top .bg .indicators li.active{
+  background: #0aa1ed;
+}
+#top .bottom{
+  height:170px;
+  width:1226px;
+  margin-bottom: 30px;
+  display: flex;
+  margin:20px 0;
+}
+#top .bottom>.left{
+  width:226px;
+  height:170px;
+  background-color: #666;
+  padding:0;
+  display: flex;
+  flex-wrap: wrap;
+}
+#top .bottom>.left>div{
+  width:74px;
+  height:85px;
+  border:1px solid #fff;
+  text-align: center;
+  border-right:0;
+  border-bottom: 0;
+  border-width: 80%;
+}
+#top .bottom>.left>div:hover{
+  cursor: pointer;
+}
+#top .bottom>.left>div>img{
+  width:50%;
+  margin-top:10px;
+}
+#top .bottom>.right{
+  width:980px;
+  height:170px;
+  margin-left:22px;
+  justify-content: space-between;
+  display: flex;
+}
+#top .bottom>.right:hover{
+  cursor: pointer;
+}
+#top .bottom>.right>.item,#top .bottom>.right>.item>img{
+  width:310px;
 }

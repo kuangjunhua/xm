@@ -207,10 +207,12 @@ th,td{
 #head .mid .outer>li:hover~.cart{
   display: block;
   height: 218px;
+  background: #fff;
 }
 #head .mid .outer .cart:hover{
   display: block;
   height: 218px;
+  background: #fff;
 }
 #head .mid .outer .center{
   width:1226px;
