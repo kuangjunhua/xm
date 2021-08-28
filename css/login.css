@@ -1,0 +1,225 @@
+*{margin:0;padding:0}
+a{
+  text-decoration: none;
+}
+.container{
+  display: flex;
+  width:1440px;
+}
+#left{
+  width:375px;
+  height:789px;
+  background: url(../img/login/left.jpg) no-repeat;
+  background-size: 375px 789px;
+}
+#right{
+  width:1065px;
+  height:789px;
+  background: #f5f5f5;
+}
+#right>.top{
+  width:1033px;
+  height:60px;
+  padding: 16px;
+}
+#right>.top>h2{
+  float: left;
+  height: 60px;
+  line-height: 60px;
+  padding-left: 45px;
+  vertical-align: middle;
+  background: url(../img/logo-mi2.png) no-repeat;
+  background-size: 40px 40px;
+  background-position: left center;
+}
+#right>.top>div{
+  float: right;
+  list-style:none;
+  display: flex;
+  height:60px;
+  width:355px;
+  height:60px;
+  line-height: 60px;
+  vertical-align: middle;
+}
+#right>.top>div>a{
+  width:56px;
+  height:60px;
+  color:#838383;
+  font-size: 14px;
+  margin:0 10px;
+}
+#right>.top>div>a:hover{
+  color:#ff6700;
+}
+#right>.top>div>span{
+  color:#838383;
+}
+#right>.top>div>.list{
+  width:86px;
+  height:60px;
+  position: relative;
+  margin:0 10px;
+  font-size: 14px;
+  color:#838383;
+  font-size: 14px;
+  font-weight: 400;
+  cursor: pointer;
+  background: url(../img/login/triangle1.png) right center no-repeat;
+}
+#right>.top>div>.list:hover{
+  color:#ff6700;
+  background: url(../img/login/triangle2.png) right center no-repeat;
+}
+#right>.top>div>.list:hover ul{
+  display: block;
+}
+#right>.top>div>.list>ul{
+  position: absolute;
+  width:100px;
+  list-style-type: none;
+  background: #fff;
+  border-radius: 5px;
+  display: none;
+
+}
+#right>.top>div>.list>ul>li{
+  padding-left: 5px;
+}
+#right>.top>div>.list>ul>li>a{
+  color:#555;
+}
+#right>.mid{
+  width:1065px;
+  height:628px;
+  padding:20px 0 0;
+  position: relative;
+}
+#right>.mid>.outer{
+  box-sizing: border-box;
+  width:460px;
+  height:600px;
+  margin: 0 0 80px;
+  padding: 40px 45px;
+  position: absolute;
+  left:317px;
+  background: #fff;
+  border-radius: 10px;
+}
+#right>.mid>.outer>h2{
+  width:360px;
+  height:41px;
+}
+#right>.mid>.outer>h2>.login{
+  color:#333;
+  font-size: 22px;
+  width:44px;
+  height:26px;
+  border-bottom: 4px solid #ff6700;
+  border-radius: 2px;
+}
+#right>.mid>.outer>h2>.register{
+  color:#bbb;
+}
+#right>.mid>.outer>form{
+  width:354px;
+  margin-top:20px;
+}
+#right>.mid>.outer>form>#uname,#right>.mid>.outer>form #upwd{
+  width:354px;
+  height:20px;
+  padding: 20px 0 10px;
+  margin:20px 0;
+  border:none;
+  background: #e0e0e0;
+  border-radius: 10px;
+}
+#right>.mid>.outer>form input::-webkit-input-placeholder{
+  color:#bbb;
+  font-size: 18px;
+}
+#right>.mid>.outer>form #upwd{
+  width:304px;
+  height:20px;
+}
+#right>.mid>.outer>form div{
+  position: relative;
+}
+#right>.mid>.outer>form div>.unlook{
+  position: absolute;
+  width:50px;
+  height:50px;
+  background:url(../img/login/unlook.png) center center no-repeat;
+  cursor: pointer;
+  top:20px
+}
+#right>.mid>.outer>form div>.look{
+  position: absolute;
+  width:50px;
+  height:50px;
+  background:url(../img/login/look.png) center center no-repeat;
+  cursor: pointer;
+  top:20px
+}
+#right>.mid>.outer>form>#uname:active{
+  outline:1px solid #ff6700;
+}
+#right>.mid>.outer>form>button{
+  width:356px;
+  height:50px;
+  color:#fff;
+  font-size: 20px;
+  background: #ff5000;
+  margin:10px 0 10px;
+  padding:0 20px;
+  border-radius: 10px;
+  outline: none;
+  border:none;
+  cursor: pointer;
+}
+#right>.mid>.outer>form>p{
+  width:356px;
+  overflow: hidden;
+  cursor: pointer;
+}
+#right>.mid>.outer>form>p>.forget{
+  color:#ff5c00;
+  width:85px;
+  height:20px;
+  font-size: 17px;
+  float: left;
+}
+#right>.mid>.outer>form>p>.phone-login{
+  float: right;
+  color:#ff5c00;
+  font-size: 17px;
+}
+#right>.mid>.outer>.other{
+  margin-top:60px;
+  text-align: center;
+}
+#right>.mid>.outer>.other>div{
+  margin-top:20px;
+}
+#right>.mid>.outer>.other>div img{
+  margin:0 8px;
+}
+#right>.bottom{
+  width:1025px;
+  height:49px;
+  color:#999;
+  padding: 0 20px;
+  font-size: 12px;
+}
+#right>.bottom>p{
+  width:1065px;
+  height:18px;
+  color:#999;
+  font-size: 12px;
+  padding: 0 20px;
+  padding-top:20px;
+  text-align: center;
+}
+#right>.bottom>p a{
+  color:#999;
+}
