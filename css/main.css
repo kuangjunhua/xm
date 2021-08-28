@@ -172,6 +172,10 @@
   text-align: center;
   cursor: pointer;
 }
+#video>.content>li:hover{
+  transform: translateY(-3px);
+  box-shadow: 0 0 5px gray;
+}
 #video>.content>li>.pic{
   position: relative;
 }
