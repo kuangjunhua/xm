@@ -82,6 +82,8 @@ th,td{
   text-align: center;
   box-shadow: 0 0 3px gray;
   display: none;
+  z-index: 5;
+  background: #fff;
 }
 #head .center .left .appcode::before{
   width:10px;
