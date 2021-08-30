@@ -1,5 +1,5 @@
 /*-------基础样式--------*/
-body,h1,h2,h3,h4,h5,h6,p,dl,dd{
+body,h1,h2,h3,h4,h5,h6,p{
   margin:0
 }
 body{
@@ -7,7 +7,7 @@ body{
   color:#333;
   font-family: "微软雅黑";
 }
-ul,ol{
+ul{
   margin:0;
   padding: 0;
   list-style: none;
@@ -29,15 +29,6 @@ input{
   vertical-align: middle;
   border:1px solid #ccc;
 }
-label{
-  vertical-align: middle;
-}
-table{
-  border-collapse: collapse;
-}
-th,td{
-  padding:0;
-}
 .center{
   width:1226px;
   margin:0 auto;
@@ -47,6 +38,7 @@ th,td{
 /*-------头部样式--------*/
 #head{
   width:1440px;
+  margin-bottom: 40px;
 }
 #head .top{
   background: #333;

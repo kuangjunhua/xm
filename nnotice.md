@@ -1,2 +1,4 @@
-> 1:下载app鼠标悬浮时该有个高度0.5s过渡，但在初始状态设置height:0;transition:height .5s，悬浮状态设置height:148px时，二维码区域不再显示,改用了display:none和display:block。
+> 下载app鼠标悬浮时该有个高度0.5s过渡，但在初始状态设置height:0;transition:height .5s，悬浮状态设置height:148px时，二维码区域不再显示,改用了display:none和display:block，没有过渡效果。
 > 登陆页扫码登陆功能没做出来
+> 网页头部 #head 元素有问题，会使得下一个元素内容向右偏移。设置高度失效。
+> 网页顶部导航栏在鼠标进入ul区域之后弹出框就会显示，不是鼠标悬浮到a标签之后再显示。
