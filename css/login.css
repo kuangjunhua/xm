@@ -134,6 +134,9 @@ a{
   background: #e0e0e0;
   border-radius: 10px;
 }
+#right>.mid>.outer>form input{
+  font-size: 20px;
+}
 #right>.mid>.outer>form input::-webkit-input-placeholder{
   color:#bbb;
   font-size: 18px;

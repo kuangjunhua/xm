@@ -128,8 +128,13 @@
 #top .bottom>.right:hover{
   cursor: pointer;
 }
-#top .bottom>.right>.item,#top .bottom>.right>.item>img{
+#top .bottom>.right>.item0,#top .bottom>.right>.item>img{
   width:310px;
+  height:306;
+  overflow: hidden;
 }
-
+#top .bottom>.right>.item0>img{
+  width:100%;
+  height:100%;
+}
 
