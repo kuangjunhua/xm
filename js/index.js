@@ -13,6 +13,7 @@ setInterval(()=>{
   }
 },3000);
 
+//动态跳转
 let phones=document.querySelectorAll("#main #phone .item");
 for(let i=1;i<=phones.length;i++){
   phones[i-1].onclick=function(){
@@ -49,3 +50,5 @@ for(let i=1;i<=zhoubians.length;i++){
     window.location.href="/detail.html?type=zhoubian&id="+i;
   }
 }
+
+//动态加载图片等

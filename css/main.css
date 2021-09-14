@@ -80,11 +80,20 @@
 }
 #phone>.content>.right>ul{
   display: flex;
+  flex-wrap: wrap;
   height:306px;
 }
-#phone>.content>.right>ul.bottom{
+#phone>.content>.right>ul>li:nth-child(5),
+#phone>.content>.right>ul>li:nth-child(6),
+#phone>.content>.right>ul>li:nth-child(7),
+#phone>.content>.right>ul>li:nth-child(8)
+{
   margin-top:16px;
 }
+/*
+#phone>.content>.right>ul.bottom{
+  margin-top:16px;
+}*/
 
 /*-------家电/智能/搭配/配件/周边------*/
 #appliance{

@@ -24,16 +24,24 @@ upwd.onblur=function(){
     alert("密码不能为空");
   }
 }
+let data={uname:uname.value,upwd:upwd.value}
 let login=function(e){
   e.preventDefault();
   if(!uname.value || !upwd.value){
     return;
   }
-  console.log(uname.value)
-  console.log(upwd.value)
-  axios.get("http://127.0.0.1:3000/login",{params:{uname:uname.value,upwd:upwd.value}})
+  myAjax('http://127.0.0.1:3000/login','POST',{uname:uname.value,upwd:upwd.value})
   .then(res=>{
-    console.log(res.data);
+    let obj=JSON.parse(res);
+    if(obj.code===200){
+      //console.log('登陆成功');
+      localStorage.setItem("unmae",obj.info.uname)
+      localStorage.setItem("upwd",obj.info.upwd);
+      localStorage.setItem("isLogin",true);
+      uname.value='';
+      upwd.value='';
+      location.href='/index.html';
+    }
   })
 }
 login_btn.addEventListener('click',login)
